@@ -197,3 +197,29 @@ a,a:link {
 	font-size:11px;
 	color:#888;
 }
+
+/*-------about page ----------*/
+.about_wrapper {
+	max-width:920px;
+	margin:0 auto;
+}
+.sub-title {
+	border-left:7px solid #c4c4c4 ;
+	padding-left: 15px;
+	height: 30px;
+	line-height: 30px;
+}
+.sub-title + p {
+	margin: 30px 0;
+	line-height: 1.737;
+}
+#synopimg img {
+	max-width: 100%;
+}
+figcaption {
+	display:none; /*공간마저 남기지않고 없앰*/
+	/*visibility: hidden; 공간은 표시, 내용은 안표시*/
+}
+#ci_list {
+	
+}
