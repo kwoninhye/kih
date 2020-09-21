@@ -221,5 +221,70 @@ figcaption {
 	/*visibility: hidden; 공간은 표시, 내용은 안표시*/
 }
 #ci_list {
-	
+	display: flex;
+	justify-content:space-between;
+}
+#ci_list li {
+	position: relative;
+}
+#ci_list .outlink {
+	display: none;
+	font-size: 2rem;
+	color:#f3f3f3;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 50%;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	background-color: rgba(0,0,0,.5);
+}
+.hide {
+	display:none;
+}
+#ci_list li:hover .outlink {
+	display: block;
+}
+.about_char {
+	display: flex;
+	flex:1 1 auto;
+}
+.about_char img {
+	max-width:100%;
+	margin: 20px;
+	margin-bottom: 30px;
+}
+.about_char li {
+	text-align: center;
+	position: relative;
+	border: 1px solid transparent;
+	box-sizing:border-box;
+	overflow:hidden;
+}
+.about_char li:hover {
+	border:1px solid #ddd;
+}
+.add {
+	display: none;
+	position: absolute;
+	background-color: rgba(0,0,0,.5);
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	color:#ddd;
+	border-radius: 50%;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	z-index: 1000;
+}
+.about_char li:hover .add{
+	display: block;
+}
+.about_char li:hover img{
+	transition:all .3s;
+	transform:scale(1.2,1.2);
 }
